@@ -5,7 +5,7 @@ import { BLACK, WHITE } from "../../constants/color";
 import { ROBOTOSERIFBOLD } from "../../constants/fontPath";
 import { LOGO } from "../../constants/imagePath";
 
-export default SplashScreen = ()=>{
+export default SplashScreen = ({navigation})=>{
 
     const logoScale = useRef(new Animated.Value(0)).current;
     const logoOpacity = useRef(new Animated.Value(0)).current;
@@ -38,10 +38,10 @@ export default SplashScreen = ()=>{
                     useNativeDriver: true,
                 }),
             ]).start(() => {
-                // setTimeout(() => {
+                setTimeout(() => {
 
-                //     navigation.navigate("OnBoarding");
-                // });
+                    navigation.navigate("Main");
+                });
             })
         ]);
     }, []);
