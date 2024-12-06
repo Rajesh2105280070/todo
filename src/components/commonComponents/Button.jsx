@@ -1,8 +1,7 @@
 import React from "react";
 import { Pressable, StyleSheet, Text } from "react-native";
-import { BLACK, BRANDCOLOR } from "../../constant/color";
-import { COMICS, COMICSBOLD } from "../../constant/fontPath";
 import { ROBOTOBOLD, ROBOTOSERIF } from "../../constants/fontPath";
+import { BLACK } from "../../constants/color";
 
 export const CustomButton = ({
     text = "",

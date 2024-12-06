@@ -2,9 +2,8 @@ import React from "react";
 import { Image, Modal, Pressable, ScrollView, StatusBar, View } from "react-native";
 // import { HEIGHT, MyStatusBar } from "../constants/config";
 // import { EMI_LOADER } from "../constants/imagepath";
-import { LOADER } from "../../constant/imagePath";
-import { MyStatusBar } from "./MyStatusBar";
-import { WHITE } from "../../constant/color";
+import { WHITE } from "../../constants/color";
+import { LOADER } from "../../constants/imagePath";
 import FastImage from "react-native-fast-image";
 export const MyLoader = ({
     visible = false,
